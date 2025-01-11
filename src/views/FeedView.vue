@@ -106,13 +106,20 @@
         </div>
 
         <div class="main-right col-span-1 space-y-4">
-            <div class="p-4 bg-white border border-gray-200 rounded-lg">
-                <h3 class="mb-6 text-xl">People you may know</h3>
-            </div>
-
-            <div class="p-4 bg-white border border-gray-200 rounded-lg">
-                <h3 class="mb-6 text-xl">Trends</h3>
-            </div>
+            <PeopleYouMayKnow></PeopleYouMayKnow>
+            <Trends></Trends>
         </div>
     </div>
 </template>
+
+<script>
+import PeopleYouMayKnow from '@/components/PeopleYouMayKnow.vue';
+import Trends from '@/components/Trends.vue';
+
+    export default{
+        components:{
+            PeopleYouMayKnow,
+            Trends
+        }
+    }
+</script>
